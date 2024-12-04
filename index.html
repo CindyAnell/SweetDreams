@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Cindy Garcia">
+    <title>Sweet Dreams</title>
+    <link rel="stylesheet" href="styes.css">
+    <!--fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/mwa7wsi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mwa7wsi.css">
+
 </head>
 
 
 <body>
 
     <header>
+        <h1>Sweet Dreams</h1>
         <!--add logo-->
+        <img src="images/cloud.png" alt="Doughnut">
         
             <nav>
                 <ul>
@@ -24,11 +32,14 @@
     </header>
 
 
-
     <section id="home">
         <h2>Your Sweetest Dreams Made Reality</h2>
         <p>At Sweet Dreams, we believe that every treat should feel like a dream come true. From freshly baked bread to decadent pastries, cookies, cakes, and everything in between, we have something to satisfy every sweet (and savory) craving.</p>
-    <!--add link to order-->
+
+        <h3>Featured item</h3>
+        <img src="images/danish-s.jpg" class="featured" alt="Doughnut">
+        <!--add link to order-->
+        <a href="#order">Order</a>
 
     </section>
         
@@ -43,44 +54,87 @@
     <section id="menu">
         <h2>Menu</h2>
 
-    <section id="doughnut">
+    <section class="doughnut">
         <h3>doughnut</h3>
-        <!--doughnut image-->
-
+        <!--responsive doughnut image-->
+        <picture>
+            <source media="(max-width: 1024px)" srcset="images/doughnut-s.jpg">
+            <source media="(min-width: 780px)" srcset="images/doughnut-m.jpg">
+            <source media="(min-width: 320px)" srcset="images/doughnut-L.jpg">
+            <img src="images/doughnut-L.jpg" alt="Doughnut">
+        </picture>
         
-
-
 
         <p>A petite sugary delight, this doughnut is light, fluffy, and perfectly coated with sweet sugar that melts in your mouth. A simple yet irresistible treat!</p>
     </section>
 
-    <section id="cupcake">
+    <section class="cupcake">
         <h3>cupcake</h3>
         <!--cupcake image-->
         <p>A rich chocolate cupcake topped with luscious caramel buttercream frosting, finished with a golden caramel drizzle. A decadent treat for every caramel lover!</p>
+
+        <picture>
+            <source media="(max-width: 1024px)" srcset="images/cupcake-s.jpg">
+            <source media="(min-width: 780px)" srcset="images/cupcake-m.jpg">
+            <source media="(min-width: 320px)" srcset="images/cupcake-L.jpg">
+            <img src="images/doughnut-l.jpg" alt="Doughnut">
+        </picture>
+
+
     </section>
 
-    <section id="brownie">
+    <section class="brownie">
         <h3>brownie</h3>
         <!--brownie image-->
         <p>A rich, fudgy brownie with a perfectly gooey center and a crackly top, delivering pure chocolate bliss in every bite.</p>
+
+        <picture>
+            <source media="(max-width: 1024px)" srcset="images/brownie-s.jpg">
+            <source media="(min-width: 780px)" srcset="images/brownie-m.jpg">
+            <source media="(min-width: 320px)" srcset="images/brownie-L.jpg">
+            <img src="images/doughnut-L.jpg" alt="Doughnut">
+        </picture>
+
     </section>
 
-    <section id="danish">
+    <section class="danish">
         <h3>danish</h3>
         <!--danish image-->
+        <picture>
+            <source media="(max-width: 1024px)" srcset="images/danish-s.jpg">
+            <source media="(min-width: 780px)" srcset="images/danish-m.jpg">
+            <source media="(min-width: 320px)" srcset="images/danish-L.jpg">
+            <img src="images/doughnut-L.jpg" alt="Doughnut">
+        </picture>
+
         <p>A flaky, buttery Danish pastry filled with sweet and tangy raspberry jam, topped with a delicate glaze for the perfect balance of flavor and texture.</p>
     </section>
 
-    <section id="cookie">
+    <section class="cookie">
         <h3>cookie</h3>
         <!--cookie image-->
+        <picture>
+            <source media="(max-width: 1024px)" srcset="images/cookie-s.jpg">
+            <source media="(min-width: 780px)" srcset="images/cookie-m.jpg">
+            <source media="(min-width: 320px)" srcset="images/cookie-L.jpg">
+            <img src="images/doughnut-L.jpg" alt="Doughnut">
+        </picture>
+
+
         <p>A chewy oatmeal cookie packed with hearty oats and studded with sweet-tart dried cherries for a delightful twist on a classic favorite.</p>
     </section>
 
-    <section id="cinnamonroll">
+    <section class="cinnamonroll">
         <h3>cinnamonroll</h3>
         <!--cinnamonroll image-->
+
+        <picture>
+            <source media="(max-width: 1024px)" srcset="images/cinnamonroll-s.jpg">
+            <source media="(min-width: 780px)" srcset="images/cinnamonroll-m.jpg">
+            <source media="(min-width: 320px)" srcset="images/cinnamonroll-L.jpg">
+            <img src="images/doughnut-L.jpg" alt="Doughnut">
+        </picture>
+
         <p>A soft, pillowy cinnamon roll swirled with sweet cinnamon sugar and topped with a rich, creamy glaze for the ultimate comfort treat.</p>
     </section>
 
@@ -135,8 +189,9 @@
                 </svg>
             </a>
                 
-    
         </section>
+
+        <p>&copy;2024</p>
     </footer>
 </body>
 
